@@ -1,0 +1,44 @@
+.wrapper {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+header {
+	grid-row: 1/2;
+	background-color: #33a8dd;
+	text-align: center;
+	color: white;
+	font-size: 35px;
+}
+.articles {
+	display: block;
+	grid-row: 2/3;
+	text-align: center;
+}
+
+h2 {
+	color: black;
+	text-decoration: none;
+}
+.p1 {
+	background-color: #33a8dd;
+	height: 40px;
+	width: 33.3%;
+	display: inline-block;
+}
+.p2 {
+	background-color: #f46731;
+	height: 40px;
+	width: 33.3%;
+	display: inline-block;
+}
+.p3 {
+	background-color: #2bcdc0;
+	height: 40px;
+	width: 33.3%;
+	display: inline-block;
+}
+article {
+	display: inline-block;
+	margin-left: 20%;
+	margin-right: 20%;
+}
