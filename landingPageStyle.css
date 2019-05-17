@@ -1,9 +1,36 @@
 .wrapper {
 	display: grid;
-	grid-template-rows: 1fr 2fr;
+	grid-template-rows: 80px 1fr 2fr;
+}
+#main {
+	grid-row: 1/2;
+}
+nav {
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+	opacity: 1.5;
+	line-height: 80px;
+}
+nav ul {
+	float: right;
+	margin-right: 30px;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.08s all;
+}
+nav ul li:hover {
+	background-color: #fd391a;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 30px;
 }
 header {
-	grid-row: 1/2;
+	grid-row: 2/3;
 	background-color: #33a8dd;
 	text-align: center;
 	color: white;
@@ -11,7 +38,7 @@ header {
 }
 .articles {
 	display: block;
-	grid-row: 2/3;
+	grid-row: 3/4;
 	text-align: center;
 }
 
@@ -41,4 +68,46 @@ article {
 	display: inline-block;
 	margin-left: 20%;
 	margin-right: 20%;
+}
+@media (min-width: 576px) {
+	body {
+		width: 100%;
+		height: 100%;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-rows: 80px 1fr 1fr;
+	}
+	#main {
+		grid-row: 1/2;
+	}
+	header {
+		grid-row: 2/3;
+		height: 100%;
+	}
+	.articles {
+		height: 100%;
+		grid-row: 3/4;
+		display: flex;
+		flex-direction: row;
+		background-color: black;
+		color: white;
+		justify-content: center;
+	}
+
+	h2 {
+		color: white;
+	}
+	.art1 {
+		color: white;
+		text-decoration: none;
+	}
+	.art2 {
+		color: white;
+		text-decoration: none;
+	}
+	.art3 {
+		color: white;
+		text-decoration: none;
+	}
 }
