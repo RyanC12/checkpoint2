@@ -1,15 +1,43 @@
+body {
+	background-color: #33a8dd;
+	background-size: cover;
+}
+
 .wrapper {
 	display: grid;
 	grid-template-rows: 80px 1fr 2fr;
 }
-#main {
-	grid-row: 1/2;
-}
 nav {
 	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+ul {
+	grid-row: 1/2;
+	list-style: none;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+ul li {
+	display: inline-block;
+	opacity: 0.8;
+	line-height: 40px;
+}
+ul li a {
+	text-decoration: none;
+	color: white;
+}
+li {
+	margin: auto;
+	font-size: 20px;
+}
+/* nav {
+	width: 100%;
 	height: 80px;
-	background-color: #000;
-	opacity: 1.5;
+	background-color: black;
+	opacity: 0.1;
 	line-height: 80px;
 }
 nav ul {
@@ -28,7 +56,7 @@ nav ul li a {
 	text-decoration: none;
 	color: #fff;
 	padding: 30px;
-}
+} */
 header {
 	grid-row: 2/3;
 	background-color: #33a8dd;
@@ -109,5 +137,11 @@ article {
 	.art3 {
 		color: white;
 		text-decoration: none;
+	}
+	ul li {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 40px;
+		margin-right: 40px;
 	}
 }
