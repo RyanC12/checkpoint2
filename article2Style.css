@@ -1,0 +1,26 @@
+.wrapper {
+	height: 100vh;
+	border: solid 40px #f46731;
+	background-color: #54ffe2;
+	font-family: "Playfair Display", serif;
+}
+h2 {
+	text-align: center;
+}
+article {
+	text-align: center;
+	padding: 40px;
+}
+@media (min-width: 495px) {
+	.wrapper {
+		border: solid 80px #f46731;
+	}
+	h2 {
+		font-size: 60px;
+	}
+	article {
+		font-size: 30px;
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+}
